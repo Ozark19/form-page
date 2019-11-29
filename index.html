@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+    <p id="description">Let us know how we can improve the Colorado Avalanche</p>
+    <form id="survey-form">
+      <div class="labels">
+      <label id="name-label">*Name:</label>
+      </div>
+      <div class="rightTab">
+      <input type="text" id="name" name="name" class="field" placeholder="Enter your name" required>
+      </div>
+      <div class="labels">
+      <label id="email-label">*Email:</label>
+      </div>
+      <div class="rightTab">
+      <input id="email" type="email" class="field" placeholder="Enter your email" required>
+        </div>
+      <div class="labels">
+      <label id="number-label">*Age:</label>
+      </div>
+      <div class="rightTab">
+      <input id="number" type="number" class="field" placeholder="Age" required min="1" max="100">
+      </div>
+      <div class="labels">
+      <label id="dropdown-label">What is your current role?</label>
+      </div>
+      <div class="rightTab">
+      <select id="dropdown" class="dropdown">
+        <option>Scouting</option>
+        <option>Management</option>
+        <option>Operations</option>
+        <option>Finance</option>
+        <option>Player</option>
+      </select>
+      </div>
+      <div class="labels">
+      <label id="radio">How long have you been with the organization?</label>
+      </div>
+      <div class="rightTab">
+      <input type="radio" name="how-long" value="0-5 years">1-5 years<br>
+      <input type="radio" name="how-long" value="5-10 years">5-10 years<br>
+      <input type="radio" name="how-long" value="10 or more years">10 or more years
+      </div>
+      <div class="labels">
+      <label id="check">Which position do you feel requires improvement?</label>
+      </div>
+      <div class="rightTab">
+      <input type="checkbox" name="position" value="lw">Left-wing<br>
+      <input type="checkbox" name="position" value="rw">Right-wing<br>
+      <input type="checkbox" name="position" value="c">Center<br>
+      <input type="checkbox" name="position" value="d">Defense<br>
+      <input type="checkbox" name="position" value="g">Goaltending
+      </div>
+        <div class="labels">
+      <label id="comments">Comments or suggestions:</label>
+      </div>
+      <div class="rightTab">
+      <textarea id="comments" name="comment" class="comment" placeholder="Enter your comment here"></textarea>
+      </div>
+      <div>
+      <input id="submit" type="submit" class="submit" value="Submit"></input>
+    </div>
+    </div>
+    </form>
+  </body>
+  </html> 
